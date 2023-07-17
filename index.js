@@ -54,3 +54,18 @@ const switchSection = (event) => {
   
   // Get the add form and input elements
   
+  const addForm = document.getElementById('add-form');
+  const titleInput = document.getElementById('title-input');
+  const authorInput = document.getElementById('author-input');
+  
+  // Attach event listener to the add form
+  addForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const title = titleInput.value;
+    const author = authorInput.value;
+  
+    if (title && author) {
+      bookCollection.addBook(title, author);
+      titleInput.value = '';
+      authorInput.value = '';
+    }
