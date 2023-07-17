@@ -1,5 +1,6 @@
-#current-date {
-    position: absolute;
-    top: 60px;
-    right: 20px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    height: auto;
   }
