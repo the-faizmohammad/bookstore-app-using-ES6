@@ -4,3 +4,8 @@ body {
     margin: 0;
     height: auto;
   }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
