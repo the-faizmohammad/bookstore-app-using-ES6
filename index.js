@@ -34,4 +34,12 @@ const switchSection = (event) => {
       bookCollection.renderBooks();
     }
   
-   
+    // Remove active class from current link
+    const currentLink = document.querySelector('.nav-link.active');
+    currentLink.classList.remove('active');
+  
+    // Add active class to selected link
+    event.target.classList.add('active');
+  };
+  
+ 
