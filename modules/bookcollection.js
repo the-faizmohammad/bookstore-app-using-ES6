@@ -11,6 +11,11 @@ export default class BookCollection {
     this.books.push(book);
     this.saveToLocalStorage();
   };
+  
+  removeBook = (index) => {
+    this.books.splice(index, 1);
+    this.saveToLocalStorage();
+  };
 
 
 }
