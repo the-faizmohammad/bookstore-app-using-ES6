@@ -42,4 +42,15 @@ const switchSection = (event) => {
     event.target.classList.add('active');
   };
   
- 
+  window.addEventListener('load', () => {
+    bookCollection.loadFromLocalStorage();
+    bookCollection.renderBooks();
+  });
+  
+  // Attach event listeners to navigation links
+  Array.from(navLinks).forEach((link) => {
+    link.addEventListener('click', switchSection);
+  });
+  
+  // Get the add form and input elements
+  
