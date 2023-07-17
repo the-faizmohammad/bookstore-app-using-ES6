@@ -1,5 +1,7 @@
 import BookCollection from './modules/bookcollection.js';
 import currentDate from './modules/currentDate.js';
+const currentDateElement = document.getElementById('current-date');
+currentDateElement.textContent = currentDate;
 // Create a book collection instance
 const bookCollection = new BookCollection();
 // Navigation links
@@ -14,7 +16,22 @@ const sections = {
 
 });
 
-
-
-const currentDateElement = document.getElementById('current-date');
-currentDateElement.textContent = currentDate;
+// Function to switch active section
+const switchSection = (event) => {
+    event.preventDefault();
+    const { section } = event.target.dataset;
+  
+    // Remove active class from current section
+    const currentSection = document.querySelector('.content-section.active');
+    currentSection.classList.remove('active');
+  
+    // Add active class to selected section
+    sections[section].classList.add('active');
+  
+    // If the selected section is the books section, render the books
+    if (section === 'books') {
+      bookCollection.loadFromLocalStorage();
+      bookCollection.renderBooks();
+    }
+  
+   
