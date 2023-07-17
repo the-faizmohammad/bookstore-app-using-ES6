@@ -64,4 +64,14 @@ body {
     padding: 24px;
     margin: 8px;
   }
+   
+/* Content sections */
+.content-section {
+    display: none;
+    width: 100%;
+  }
+  
+  .content-section.active {
+    display: block;
+  }
   
