@@ -11,11 +11,27 @@ export default class BookCollection {
     this.books.push(book);
     this.saveToLocalStorage();
   };
-  
+
   removeBook = (index) => {
     this.books.splice(index, 1);
     this.saveToLocalStorage();
   };
+
+  renderBooks = () => {
+    const bookSection = document.getElementById('books-section');
+    const bookList = document.getElementById('book-list');
+    bookList.innerHTML = '';
+
+    this.books.forEach((book, index) => {
+      const bookItem = document.createElement('li');
+      bookItem.classList.add('book-item');
+      bookItem.innerHTML = `
+        <span>${book.title} by ${book.author}</span>
+        <button class="remove-btn" data-index="${index}">Remove</button>
+      `;
+      bookList.appendChild(bookItem);
+      bookSection.appendChild(bookList);
+    });
 
 
 }
