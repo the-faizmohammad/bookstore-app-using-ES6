@@ -37,4 +37,22 @@ body {
     background-color: #4caf50;
     color: #fff;
   }
+
+  .logo {
+    width: 60%;
+    text-align: start;
+  }
+  
+  .logo h1 {
+    margin-left: 30px;
+    color: #ccc;
+  }
+  
+  .link-container {
+    width: 40%;
+    display: flex;
+    margin-right: 30px;
+    justify-content: end;
+  }
+  
   
