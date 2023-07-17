@@ -44,4 +44,16 @@ export default class BookCollection {
     }
   };
 
+  saveToLocalStorage = () => {
+    localStorage.setItem('books', JSON.stringify(this.books));
+    this.renderBooks();
+  };
+
+  loadFromLocalStorage = () => {
+    const storedBooks = localStorage.getItem('books');
+    if (storedBooks) {
+      this.books = JSON.parse(storedBooks);
+      this.renderBooks();
+    }
+  };
 }
