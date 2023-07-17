@@ -34,7 +34,7 @@ body {
   }
   
   .navbar a.active {
-    background-color: #4caf50;
+    background-color:black;
     color: #fff;
   }
 
@@ -55,4 +55,13 @@ body {
     justify-content: end;
   }
   
+  #current-date {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 24px;
+    margin: 8px;
+  }
   
