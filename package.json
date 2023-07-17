@@ -1,0 +1,15 @@
+{
+  "name": "bookstore-app-using-es6",
+  "version": "1.0.0",
+  "description": "\"Recreating Awesome books app with ES6 syntax and modular code structure.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hint": "^7.1.10"
+  }
+}
