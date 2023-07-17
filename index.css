@@ -91,4 +91,17 @@ body {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+  .book-item span {
+    margin-right: 10px;
+  }
   
+  .remove-btn {
+    background-color: #ff8080;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+   
