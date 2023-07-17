@@ -33,5 +33,15 @@ export default class BookCollection {
       bookSection.appendChild(bookList);
     });
 
+    const removeButtons = document.getElementsByClassName('remove-btn');
+    for (let i = 0; i < removeButtons.length; i += 1) {
+      const removeButton = removeButtons[i];
+      removeButton.addEventListener('click', (event) => {
+        const { index } = event.target.dataset;
+        this.removeBook(index);
+        this.renderBooks();
+      });
+    }
+  };
 
 }
