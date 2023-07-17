@@ -9,3 +9,13 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
+
+  /* Navigation bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
