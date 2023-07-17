@@ -114,3 +114,52 @@ h2 {
     align-items: center;
     justify-content: center;
 }
+
+#add-form {
+    display: flex;
+    width: 50%;
+    max-width: 500px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  
+  #add-form input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  #add-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Contact info */
+  .contact-section {
+    padding-top: 20%;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    color: #ccc;
+  }
+  
