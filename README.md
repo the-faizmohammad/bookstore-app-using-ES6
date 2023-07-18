@@ -73,16 +73,6 @@ This repository contains the code and assets for our boostore website. The websi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo link](https://the-faizmohammad.github.io/conferencePage/index.html)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Loom Video Walkthrough <a name="video-walkthrough"></a>
-
-- [Loom Video Walkthrough](https://www.loom.com/share/9d3ff1f01ff942e481c790bc9cb9fb7f?sid=32f7e238-473e-462d-9014-cde462f62687)
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -165,7 +155,7 @@ If you like this project give me a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Special thanks to author [Cindy Shin](https://www.behance.net/adagio07) for here exceptional design which served as inspiration for this project.
+Special thanks to Microverse Team
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
