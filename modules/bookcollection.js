@@ -6,18 +6,19 @@ export default class BookCollection {
     this.books = [];
   }
 
-  addBook = (title, author) => {
+//  function for addBook
+addBook = (title, author) => {
     const book = new Book(title, author);
     this.books.push(book);
     this.saveToLocalStorage();
-  };
+}
 
-  removeBook = (index) => {
+// function for removeBook
+removeBook = (index) => {
     this.books.splice(index, 1);
     this.saveToLocalStorage();
-  };
-
-  renderBooks = () => {
+}
+  renderBooks() {
     const bookSection = document.getElementById('books-section');
     const bookList = document.getElementById('book-list');
     bookList.innerHTML = '';
@@ -26,9 +27,9 @@ export default class BookCollection {
       const bookItem = document.createElement('li');
       bookItem.classList.add('book-item');
       bookItem.innerHTML = `
-        <span>${book.title} by ${book.author}</span>
-        <button class="remove-btn" data-index="${index}">Remove</button>
-      `;
+          <span>${book.title} by ${book.author}</span>
+          <button class="remove-btn" data-index="${index}">Remove</button>
+        `;
       bookList.appendChild(bookItem);
       bookSection.appendChild(bookList);
     });
@@ -42,18 +43,18 @@ export default class BookCollection {
         this.renderBooks();
       });
     }
-  };
+  }
 
-  saveToLocalStorage = () => {
+  saveToLocalStorage() {
     localStorage.setItem('books', JSON.stringify(this.books));
     this.renderBooks();
-  };
+  }
 
-  loadFromLocalStorage = () => {
+  loadFromLocalStorage() {
     const storedBooks = localStorage.getItem('books');
     if (storedBooks) {
       this.books = JSON.parse(storedBooks);
       this.renderBooks();
     }
-  };
+  }
 }

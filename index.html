@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookstore App</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <header>
-        <div class="navbar">
+        <header>
+          <div class="navbar">
             <div class="logo">
-                <h1>Awesome Books</h1>
+              <h1>Awesome Books</h1>
             </div>
             <div class="link-container">
                 <a class="nav-link active" href="#" data-section="books">Books</a>
                 <a class="nav-link" href="#" data-section="add-book">Add Book</a>
                 <a class="nav-link" href="#" data-section="contact-info">Contact Info</a>
             </div>
-        </div>
-    </header>
-    <p id="current-date"></p>
-    <section id="add-book">
+
+          </div>
+        </header>
+
+        <p id="current-date"></p>
+
+        <section>
+          <div id="books-section" class="content-section active">
+            <h2>List of Awesome Books</h2>
+            <ul id="book-list"></ul>
+          </div>
+        </section>
+
+
+      <section id="add-book">
         <div id="add-book-section" class="content-section">
-            <h2>Add a new book</h2>
-            <form id="add-form">
+          <form id="add-form">
+            <h1>Add a new book</h1>
+            <input type="text" id="title-input" placeholder="Title" required>
+            <input type="text" id="author-input" placeholder="Author" required>
 
-                <input type="text" id="title-input" placeholder="Title" required>
-                <input type="text" id="author-input" placeholder="Author" required>
-
-                <button type="submit">Add</button>
-            </form>
+            <button type="submit">Add</button>
+          </form>
         </div>
+      </section>
     </section>
     <section id="contact">
         <div id="contact-info-section" class="content-section">
-            <h1>Contact information</h1>
             <div class="contact-info">
+                <h1>Contact information</h1>
                 <p>Whether you have inquiries or simply wish to greet with a "Hello," feel free to get in touch!</p>
                 <p>Email: <a href="">email2faizmgmail.com</a></p>
                 <p>Phone: +917508054667</p>
@@ -50,6 +59,8 @@
         </div>
     </footer>
     <script type="module" src="index.js"></script>
+    <script type="module" src="./modules/book.js"></script>
+    <script type="module" src="./modules/bookcollection.js"></script>
 </body>
 
 </html>

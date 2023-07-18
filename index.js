@@ -1,6 +1,8 @@
 import BookCollection from './modules/bookcollection.js';
 import currentDate from './modules/currentDate.js';
-
+//Current date
+const currentDateElement = document.getElementById('current-date');
+currentDateElement.textContent = currentDate;
 // Create a book collection instance
 const bookCollection = new BookCollection();
 
@@ -15,7 +17,7 @@ const sections = {
 };
 
 // Function to switch active section
-const switchSection = (event) => {
+function switchSection(event) {
   event.preventDefault();
   const { section } = event.target.dataset;
 
@@ -38,7 +40,7 @@ const switchSection = (event) => {
 
   // Add active class to selected link
   event.target.classList.add('active');
-};
+}
 
 window.addEventListener('load', () => {
   bookCollection.loadFromLocalStorage();
@@ -46,9 +48,10 @@ window.addEventListener('load', () => {
 });
 
 // Attach event listeners to navigation links
-Array.from(navLinks).forEach((link) => {
+for (let i = 0; i < navLinks.length; i += 1) {
+  const link = navLinks[i];
   link.addEventListener('click', switchSection);
-});
+}
 
 // Get the add form and input elements
 const addForm = document.getElementById('add-form');
@@ -67,6 +70,3 @@ addForm.addEventListener('submit', (event) => {
     authorInput.value = '';
   }
 });
-
-const currentDateElement = document.getElementById('current-date');
-currentDateElement.textContent = currentDate;
