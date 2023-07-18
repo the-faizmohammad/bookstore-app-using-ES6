@@ -1,6 +1,6 @@
 import BookCollection from './modules/bookcollection.js';
 import currentDate from './modules/currentDate.js';
-//Current date
+// Current date
 const currentDateElement = document.getElementById('current-date');
 currentDateElement.textContent = currentDate;
 // Create a book collection instance
