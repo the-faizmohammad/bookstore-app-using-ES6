@@ -133,7 +133,7 @@ h2 {
 
 #add-form input[type="text"] {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 3px;
